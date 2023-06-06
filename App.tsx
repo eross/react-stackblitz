@@ -1,6 +1,6 @@
 import * as React from 'react';
-import './style.css';
-import MyFunc from './MyFunc.tsx';
+import './css/style.css';
+import MyFunc from './components/MyFunc';
 
 export default function App() {
   return (
