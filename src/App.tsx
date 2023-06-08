@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './css/style.css';
-import ExpenseItem from './components/ExpenseItem';
+import ExpenseItem from './components/ExpenseItem.tsx';
 
 export default function App() {
   const expenses = [
