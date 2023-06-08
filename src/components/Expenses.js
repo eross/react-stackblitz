@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ExpenseItem from './ExpenseItem.tsx';
+import ExpenseItem from './ExpenseItem';
 import './Expenses.css';
 
 export default function Expenses() {
