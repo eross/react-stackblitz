@@ -29,12 +29,12 @@ export default function App() {
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
 
   const addExpenseHandler = (expense) => {
+    console.log('addExpenseHandler');
+    console.log('expense');
+    console.log(expense);
+
     setExpenses((prevExpenses) => {
-      // convert to date format
-      expense.date = new Date(expense.date);
-      var x = [expense, ...expenses];
-      console.log(x);
-      return x;
+      return [expense, ...prevExpenses];
     });
   };
 
