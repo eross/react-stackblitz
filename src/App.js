@@ -26,8 +26,8 @@ export default function App() {
     },
   ];
 
-  const addExpenseHandler = (expenses) => {
-    console.log(expenses);
+  const addExpenseHandler = (expense) => {
+    console.log(expense);
   };
   return (
     <div>
