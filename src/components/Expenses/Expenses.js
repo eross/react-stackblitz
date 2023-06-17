@@ -9,6 +9,7 @@ export default function Expenses(props) {
   const filterChangeHandler = (filter) => {
     setExpenseFilter(filter);
   };
+  console.log(props.items);
   return (
     <div>
       <Card className="expenses">
