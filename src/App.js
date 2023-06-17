@@ -30,7 +30,11 @@ export default function App() {
 
   const addExpenseHandler = (expense) => {
     setExpenses((prevExpenses) => {
-      return [expense, ...expenses];
+      // convert to date format
+      expense.date = new Date(expense.date);
+      var x = [expense, ...expenses];
+      console.log(x);
+      return x;
     });
   };
 
