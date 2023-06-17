@@ -5,15 +5,17 @@ import Card from '../UI/Card';
 import './Expenses.css';
 
 export default function Expenses(props) {
-  const [expenseFilter, setExpenseFilter] = useState('2022');
+  const [expenseFilter, setExpenseFilter] = useState('2020');
   const filterChangeHandler = (filter) => {
-    console.log('Expenses ' + filter);
+    setExpenseFilter(filter);
   };
   return (
     <div>
-     
       <Card className="expenses">
-      <ExpensesFilter onFilterChange={filterChangeHandler} />
+        <ExpensesFilter
+          selected={expenseFilter}
+          onFilterChange={filterChangeHandler}
+        />
         <ExpenseItem
           title={props.items[0].title}
           amount={props.items[0].amount}
